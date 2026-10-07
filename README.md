@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Financial-Services-Platform"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Financial-Services-Platform?style=social" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Financial-Services-Platform"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Financial-Services-Platform?style=social" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Financial-Services-Platform/fork"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Financial-Services-Platform?style=social" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Financial-Services-Platform/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Cloud-Financial-Services-Platform?color=blue" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -24,7 +24,7 @@
 ---
 
 ### 📌 Overview & SEO Summary 🔍
-Welcome to the ultimate curated directory of **cloud financial services platforms**, **open-source core banking systems**, and **banking-as-a-service (BaaS) frameworks**. Whether you are evaluating enterprise-grade commercial platforms (such as *Microsoft Cloud for Financial Services*, *Google Cloud FSI*, *Temenos Banking Cloud*, *nCino Agentic Banking*, and *Thought Machine Vault Core*), or self-hostable open-source banking engines (like *Apache Fineract*, *Maybe Finance*, *Firefly III*, and *Hyperswitch*), this directory provides exhaustive coverage of market leaders, specific pricing tiers, valuation metrics, and open-source star counts.
+Welcome to the ultimate curated directory of **cloud financial services platforms**, **open-source core banking systems**, and **banking-as-a-service (BaaS) frameworks**. Whether you are evaluating enterprise-grade commercial platforms (such as *Microsoft Cloud for Financial Services*, *Google Cloud FSI*, *Temenos Banking Cloud*, *nCino Agentic Banking*, and *Thought Machine Vault Core*), or self-hostable open-source banking engines (like *Apache Fineract*, *Maybe Finance*, *Firefly III*, and *Hyperswitch*), this directory provides exhaustive coverage of market leaders, specific pricing tiers, valuation metrics, and open-source Stars_Counts.
 
 ---
 
@@ -60,7 +60,7 @@ Welcome to the ultimate curated directory of **cloud financial services platform
 
 ## 🔓 Open-Source GitHub Projects 🌐
 
-*Sorted by GitHub Stars Count (Descending)* 🌟
+*Sorted by GitHub_Stars_Count (Descending)* 🌟
 
 - **[Maybe Finance](https://github.com/maybe-finance/maybe)** [![Stars](https://img.shields.io/github/stars/maybe-finance/maybe?style=social&color=white)](https://github.com/maybe-finance/maybe/stargazers)  
   **AI-powered personal finance & wealth management platform**, AGPL-3.0 licensed. **Budgeting, investing, and financial planning**. Open-source alternative to Mint. **42,000+ stars**. The most popular open-source personal finance engine. 💰
@@ -121,7 +121,7 @@ Contributions are welcome! Follow these steps to submit new cloud financial serv
 
 1. 🍴 **Fork** the repository.
 2. 📝 **Add/edit** entries in `README.md` maintaining table/list structure and formatting.
-3. 🔗 Include project title, official website/GitHub link, exact star badge, license, and brief description.
+3. 🔗 Include project title, official website/GitHub link, exact Stars_Badge, license, and brief description.
 4. 🚀 Submit a **Pull Request** with a descriptive summary of your changes.
 
 ---
@@ -155,3 +155,12 @@ If you find this cloud financial services platform repository useful, please con
 <p align="center">
   <b>Made with ❤️ for fintech engineers, banking architects, and open-source financial infrastructure advocates.</b>
 </p>
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Cloud-Financial-Services-Platform&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Cloud-Financial-Services-Platform_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Cloud-Financial-Services-Platform_growth.svg">
+  </picture>
+</a>
