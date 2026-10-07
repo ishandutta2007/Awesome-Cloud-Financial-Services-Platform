@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f24" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <!-- Filters for Glow Effect -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    /* CSS Animations for dynamic SVG elements */
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.4; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.05); }
+    }
+    @keyframes floatCard1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes floatCard2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(12px); }
+    }
+    @keyframes dashMove {
+      to { stroke-dashoffset: -40; }
+    }
+    @keyframes barGrow {
+      0%, 100% { transform: scaleY(0.95); }
+      50% { transform: scaleY(1.1); }
+    }
+
+    .bg-circle1 { animation: pulseGlow 8s ease-in-out infinite; transform-origin: 200px 100px; }
+    .bg-circle2 { animation: pulseGlow 10s ease-in-out infinite 2s; transform-origin: 1000px 300px; }
+    .floating-card-left { animation: floatCard1 6s ease-in-out infinite; }
+    .floating-card-right { animation: floatCard2 7s ease-in-out infinite 1s; }
+    .animated-wire { stroke-dasharray: 8 8; animation: dashMove 3s linear infinite; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="400" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Animated Glowing Orbs Background -->
+  <circle class="bg-circle1" cx="200" cy="100" r="180" fill="#3b82f6" opacity="0.15" filter="url(#softGlow)" />
+  <circle class="bg-circle2" cx="1000" cy="300" r="220" fill="#8b5cf6" opacity="0.15" filter="url(#softGlow)" />
+
+  <!-- Grid Pattern Overlay -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <path d="M 0 50 L 1200 50 M 0 100 L 1200 100 M 0 150 L 1200 150 M 0 200 L 1200 200 M 0 250 L 1200 250 M 0 300 L 1200 300 M 0 350 L 1200 350" />
+    <path d="M 100 0 L 100 400 M 200 0 L 200 400 M 300 0 L 300 400 M 400 0 L 400 400 M 500 0 L 500 400 M 600 0 L 600 400 M 700 0 L 700 400 M 800 0 L 800 400 M 900 0 L 900 400 M 1000 0 L 1000 400 M 1100 0 L 1100 400" />
+  </g>
+
+  <!-- Background Dynamic Graphic Elements (Behind Text) -->
+  <!-- Left Side Floating Tech Element: Cloud & Core Banking Node -->
+  <g class="floating-card-left" opacity="0.45">
+    <rect x="60" y="70" width="180" height="110" rx="12" fill="#0f172a" stroke="url(#cyanGrad)" stroke-width="1.5" />
+    <text x="80" y="100" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">⚡ CORE BANKING</text>
+    <rect x="80" y="115" width="140" height="8" rx="4" fill="#1e293b" />
+    <rect x="80" y="115" width="105" height="8" rx="4" fill="#06b6d4" />
+    <text x="80" y="145" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">TPS: 25,000 req/s</text>
+    <text x="80" y="162" fill="#10b981" font-family="system-ui, sans-serif" font-size="11">● 99.999% Uptime</text>
+
+    <!-- Connecting animated wire -->
+    <path class="animated-wire" d="M 240 125 Q 320 125 350 180" fill="none" stroke="#06b6d4" stroke-width="2" />
+  </g>
+
+  <!-- Right Side Floating Tech Element: Agentic AI & Analytics Node -->
+  <g class="floating-card-right" opacity="0.45">
+    <rect x="960" y="220" width="180" height="110" rx="12" fill="#0f172a" stroke="url(#purpleGrad)" stroke-width="1.5" />
+    <text x="980" y="250" fill="#c084fc" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">🤖 AGENTIC AI HUB</text>
+    <path d="M 980 270 Q 1020 285 1060 265 T 1120 280" fill="none" stroke="#a855f7" stroke-width="2" />
+    <circle cx="1060" cy="265" r="4" fill="#ec4899" />
+    <text x="980" y="310" fill="#10b981" font-family="system-ui, sans-serif" font-size="11">✔ Compliance Verified</text>
+
+    <!-- Connecting animated wire -->
+    <path class="animated-wire" d="M 960 275 Q 880 275 850 220" fill="none" stroke="#a855f7" stroke-width="2" />
+  </g>
+
+  <!-- Central Foreground Container for Text Clarity -->
+  <rect x="250" y="70" width="700" height="260" rx="20" fill="#0a0f24" fill-opacity="0.75" stroke="#334155" stroke-width="1" filter="url(#glow)" />
+
+  <!-- FOREGROUND TEXT AND BADGES -->
+  <!-- Top Pill Badge -->
+  <g transform="translate(470, 95)">
+    <rect width="260" height="30" rx="15" fill="#1e293b" stroke="url(#cyanGrad)" stroke-width="1.5" />
+    <text x="130" y="20" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">
+      ☁️ CLOUD FINANCIAL SERVICES 🏦
+    </text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="600" y="175" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="900" text-anchor="middle" letter-spacing="-0.5">
+    Awesome Cloud Financial Services
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="215" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="500" text-anchor="middle">
+    Core Banking Modernization • Agentic AI Banking • Open Banking &amp; Infrastructure
+  </text>
+
+  <!-- Feature Pills in Foreground -->
+  <g transform="translate(320, 250)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="160" height="36" rx="18" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" />
+    <text x="80" y="23" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">🏢 Enterprise SaaS</text>
+
+    <!-- Pill 2 -->
+    <rect x="180" y="0" width="180" height="36" rx="18" fill="#064e3b" stroke="#10b981" stroke-width="1" />
+    <text x="270" y="23" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">🔓 Open-Source Banking</text>
+
+    <!-- Pill 3 -->
+    <rect x="380" y="0" width="170" height="36" rx="18" fill="#4c1d95" stroke="#a855f7" stroke-width="1" />
+    <text x="465" y="23" fill="#e9d5ff" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">🤖 Agentic AI Engine</text>
+  </g>
+</svg>
